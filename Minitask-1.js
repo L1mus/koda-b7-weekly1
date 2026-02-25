@@ -1,9 +1,9 @@
 function polindromeChecker(str) {
   if (str === undefined || typeof str !== "string" || str === "") {
     return console.log("Input tidak valid");
-    const cleanData = str.toLowerCase().replace(/[^a-z0-9]/g);
   }
-  let strReverse = cleanData.split("").reverse().join("");
+  const cleanData = str.toLowerCase().replace(/[^a-z0-9]/g);
+  const strReverse = cleanData.split("").reverse().join("");
   if (strReverse === cleanData) {
     return console.log("str tersebut merupakan polindrome");
   } else {
