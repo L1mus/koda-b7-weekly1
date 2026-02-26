@@ -56,5 +56,11 @@ Metode forEach() dari instance Array mengeksekusi fungsi yang disediakan sekali 
 */
 
 const array = ["Aku", "adalah", "Power","Ranger"];
+const copyArr= [];
 
 array.forEach((element) => console.log(element));
+array.forEach((item) => {
+  copyItems.push(item);
+});
+
+console.log(copyArr)
