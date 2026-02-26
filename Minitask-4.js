@@ -60,7 +60,7 @@ const copyArr= [];
 
 array.forEach((element) => console.log(element));
 array.forEach((item) => {
-  copyItems.push(item);
+  copyArr.push(item);
 });
 
 console.log(copyArr)
