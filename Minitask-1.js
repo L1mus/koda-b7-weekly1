@@ -2,7 +2,8 @@ function polindromeChecker(str) {
   if (str === undefined || typeof str !== "string" || str === "") {
     return console.log("Input tidak valid");
   }
-  const cleanData = str.toLowerCase().replace(/[^a-z0-9]/g);
+  const cleanData = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+  console.log(cleanData);
   const strReverse = cleanData.split("").reverse().join("");
   if (strReverse === cleanData) {
     return console.log("str tersebut merupakan polindrome");
@@ -11,12 +12,11 @@ function polindromeChecker(str) {
   }
 }
 
-
-polindromeChecker("Kasur Rusak");//normal case
-polindromeChecker("Malam");//case mudah
-polindromeChecker("Hello");//case tidak polindrome
+polindromeChecker("Kasur Rusak"); //normal case
+polindromeChecker("Malam"); //case mudah
+polindromeChecker("Hello"); //case tidak polindrome
 //edge case dan absurd case
-polindromeChecker("")
+polindromeChecker("");
 polindromeChecker(123);
 polindromeChecker(["Malam"]);
 polindromeChecker("%$#@!");
